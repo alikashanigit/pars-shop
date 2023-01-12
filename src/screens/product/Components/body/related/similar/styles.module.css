@@ -1,0 +1,22 @@
+.section {
+    width: 100%;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.title {
+    /* font-size: 1rem; */
+}
+.name {
+    padding-right: 5px;
+    font-size: .9rem;
+    word-spacing: 1px;
+    font-family: sflight;
+}
+.header a {
+    font-size: .88rem;
+}

@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    padding-bottom: 0;
+}
+.header > *:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header > *:first-child > *:last-child {
+    font-size: .65rem;
+    color: #444;
+}
+.client {
+    font-size: .7rem;
+}

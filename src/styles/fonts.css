@@ -1,0 +1,52 @@
+@font-face {
+    font-family: yekanregular;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1644779410/yekan-regular_j9xzty.ttf');
+}
+@font-face {
+    font-family: bzar;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1644875683/fonts/pixelboy-BYekan_jo3ban.woff');
+}
+@font-face {
+    font-family: BRoya;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1644875672/fonts/pixelboy-BRoya_mevubg.woff');
+}
+@font-face {
+    font-family: shabnamLight;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1661186785/makeshop/fonts/shabnam-font-v5.0.1/Shabnam-Light_u1lizr.ttf');
+}
+@font-face {
+    font-family: shabnamBold;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1661186783/makeshop/fonts/shabnam-font-v5.0.1/Shabnam-Bold_l8tugn.ttf');
+}
+
+@font-face {
+    font-family: sflight;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1654403127/live/SFUIText/SFUIText-Light_bnwq0m.otf');
+}
+@font-face {
+    font-family: sfregular;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1654403127/live/SFUIText/SFUIText-Regular_kseutj.otf');
+}
+@font-face {
+    font-family: sfsemibold;
+    src: url('https://res.cloudinary.com/phase-1/raw/upload/v1654403129/live/SFUIText/SFUIText-Semibold_qjshnu.otf');
+}
+
+/* poppins - 300 */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+/* poppins - 900 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Tangerine:wght@700&display=swap');
+
+/*   - 400 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* inter - 600 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+/* open sans 500 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/* rubik 600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Rubik:wght@600&family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Rubik&family=Tangerine:wght@700&display=swap');

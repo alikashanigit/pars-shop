@@ -1,0 +1,20 @@
+.shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.add_btn {
+    background-color: #ff5555;
+    color: #fff;
+    gap: 3px;
+    padding: 1px 8px;
+    border-radius: 10px;
+}
+
+.add_btn > *:first-child {
+    border-left: 1px solid #ddd;
+    padding-left: 4px;
+}

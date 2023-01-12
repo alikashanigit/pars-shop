@@ -1,0 +1,64 @@
+#swiper_arrows_bottom_center {
+    padding-bottom: 65px;
+}
+#swiper_arrows_bottom_center > .swiper-wrapper {
+    width: 90%;
+}
+
+#swiper_arrows_bottom_center .swiper-button-prev::after,
+#swiper_arrows_bottom_center .swiper-button-next::after {
+    font-size: 1.2rem;
+    padding: 3px;
+    min-width: 33px;
+    min-height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+#swiper_arrows_bottom_center .swiper-button-prev {
+    top: auto;
+    bottom: 10px;
+    right: calc(50% + -45px);
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+#swiper_arrows_bottom_center .swiper-button-next {
+    top: auto;
+    bottom: 10px;
+    left: calc(50% + -45px);
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    #swiper_arrows_bottom_center .swiper-button-prev::after,
+    #swiper_arrows_bottom_center .swiper-button-next::after {
+        font-size: 1.2rem;
+        padding: 3px;
+        min-width: 33px;
+        min-height: 33px;
+        color: #ddd;
+    }
+
+    #swiper_arrows_bottom_center .swiper-button-prev::after {
+        padding-left: 5px;
+    }
+
+    #swiper_arrows_bottom_center .swiper-button-next::after {
+        padding-right: 5px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #swiper_arrows_bottom_center .swiper-button-prev::after,
+    #swiper_arrows_bottom_center .swiper-button-next::after {
+        font-size: 1.5rem;
+        padding: 3px;
+        min-width: 37px;
+        min-height: 37px;
+    }
+}

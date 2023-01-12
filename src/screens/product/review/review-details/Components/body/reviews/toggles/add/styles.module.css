@@ -1,0 +1,16 @@
+#backdrop {
+    z-index: 2;
+    background-color: #fff;
+    display: block;
+    padding-bottom: 160px;
+    overflow-y: auto;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body > * {
+    width: 100%;
+}

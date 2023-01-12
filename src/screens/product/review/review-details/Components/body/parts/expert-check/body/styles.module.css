@@ -1,0 +1,35 @@
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 15px;
+}
+.item {
+    width: 100%;
+    padding: 5px 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header > span {
+    font-family: shabnambold;
+    padding-bottom: 2px;
+}
+.value {
+    padding: 5px;
+    font-size: .9rem;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating > span {
+    font-size: .8rem;
+    padding-top: 2px;
+}

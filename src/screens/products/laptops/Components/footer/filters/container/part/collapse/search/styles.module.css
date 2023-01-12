@@ -1,0 +1,21 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    padding-top: 0;
+}
+
+.search input {
+    border: 1px solid #4eb8ff;
+    border-radius: 12px;
+    height: 40px;
+    font-size: .9rem;
+    word-spacing: 1px;
+}
+.search label {}
+.search button {
+    position: absolute;
+    left: 0;
+}

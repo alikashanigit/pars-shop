@@ -1,0 +1,12 @@
+.qty_warning {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    word-spacing: 1px;
+    color: #ff4747;
+    position: absolute;
+    top: 220px;
+}

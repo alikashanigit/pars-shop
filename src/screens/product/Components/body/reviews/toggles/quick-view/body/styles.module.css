@@ -1,0 +1,10 @@
+.body {
+    padding: 10px 10%;
+}
+
+.body > p {
+    font-size: .85rem;
+    word-spacing: 2px;
+    line-height: 25px;
+    border-bottom: 1px solid #eee;
+}

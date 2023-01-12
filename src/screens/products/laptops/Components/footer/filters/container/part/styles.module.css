@@ -1,0 +1,9 @@
+.part {
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 10px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}

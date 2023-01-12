@@ -1,0 +1,8 @@
+#backdrop {
+    z-index: 2;
+    background-color: #fff;
+    display: block;
+    overflow-y: auto;
+    padding-bottom: 150px;
+    z-index: 20;
+}

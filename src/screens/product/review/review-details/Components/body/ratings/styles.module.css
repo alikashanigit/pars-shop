@@ -1,0 +1,38 @@
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    width: 100%;
+    padding: 20px 5%;
+    
+}
+.item {   
+    width: 150px;
+    flex-grow: 1;
+    flex-direction: column;
+    color: #555;
+    padding: 5px;
+    background-color: #eee;
+    box-shadow: 0 0 2px #eee;
+    border-radius: 12px;
+}
+.item:nth-child(even) {
+    border-left: none;
+}
+.item:nth-child(3), .item:nth-child(4) {
+    border-bottom: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.header > span {
+    font-size: .78rem;
+}
+.header > *:last-child {
+    font-family: sfsemibold;
+    font-size: 1rem;
+}

@@ -1,0 +1,22 @@
+.item {
+    display: flex;
+    gap: 6px;
+    margin: 5px 0;
+}
+.sign {
+    min-width: 6px;
+    max-width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(181, 181, 181);
+    margin-top: 9px;
+}
+.item > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.unit {
+    font-family: shabnamlight;
+    font-size: .85rem;
+}

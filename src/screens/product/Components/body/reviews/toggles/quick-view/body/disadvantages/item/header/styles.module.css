@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #f6f6f6;
+    color: #666;
+    font-size: .6rem;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}

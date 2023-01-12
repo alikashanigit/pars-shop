@@ -1,0 +1,20 @@
+.item {
+    
+}
+
+.btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    color: #444;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.459);
+    font-size: 1.05rem;
+}
+.collapse a {
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: .88rem;
+    word-spacing: 1px;
+    border-bottom: none;
+}

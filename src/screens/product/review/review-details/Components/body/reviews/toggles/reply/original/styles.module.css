@@ -1,0 +1,19 @@
+.original {
+    padding: 10px;
+}
+.original > div {
+    padding: 5px 10%;
+}
+.user {
+    font-size: .9rem;
+    word-spacing: 1px;
+    padding: 0 5px;
+}
+.original > p {
+    background-color: #eee;
+    padding: 10px 15px;
+    font-size: .8rem;
+    word-spacing: 1px;
+    line-height: 25px;
+    border-radius: 15px;
+}

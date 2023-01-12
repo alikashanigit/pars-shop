@@ -1,0 +1,35 @@
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.back_links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+.back_links > * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.products_link {
+    font-size: .8rem;
+}
+.products_link > span {
+    padding-top: 2px;
+}
+.back_links > span {
+    font-family: sflight;
+    color: #ddd;
+    font-size: .8rem;
+}
+.back_link {
+    font-family: sflight;
+    font-size: .75rem;
+}
+

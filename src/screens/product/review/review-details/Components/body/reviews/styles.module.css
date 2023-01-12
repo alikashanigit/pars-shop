@@ -1,0 +1,36 @@
+.section {
+    width: calc(100% - 40px);
+    background-color: #f4f4f4;
+    box-shadow: 0 0 2px #eee;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+.header button {
+    font-size: .88rem;
+}
+
+.add_review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add_review > * {
+    border: 1px solid orangered;
+    color: orangered;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: .9rem;
+    word-spacing: 1px;
+    gap: 10px;
+    color: #444;
+}

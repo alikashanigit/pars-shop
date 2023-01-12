@@ -1,0 +1,10 @@
+.item {
+    width: 100%;  
+    background-color: #f4f4f4; 
+    border-radius: 15px;
+}
+
+.item > button {
+    display: block;
+    width: 100%;
+}

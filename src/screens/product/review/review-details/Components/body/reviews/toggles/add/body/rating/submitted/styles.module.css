@@ -1,0 +1,9 @@
+.submitted {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #666;
+    font-size: .8rem;
+    word-spacing: 1px;
+}

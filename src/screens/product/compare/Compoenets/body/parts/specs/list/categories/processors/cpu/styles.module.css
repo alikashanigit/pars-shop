@@ -1,0 +1,15 @@
+.sub_category {}
+.title {
+    font-size: 1.5rem;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.value {
+    font-size: 1.2rem;
+    font-family: shabnambold;    
+    /* direction: ltr; */
+    padding: 0 5px;
+}

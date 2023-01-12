@@ -1,0 +1,12 @@
+.sort_btn {
+    font-size: .9rem;
+    color: #1fa5ff;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 30px; */
+    /* height: 25px; */
+    /* background-color: #aaa; */
+}

@@ -1,0 +1,20 @@
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.name {
+    direction: ltr;
+    font-family: sflight;
+    font-size: .78rem;
+    word-spacing: 1px;
+}

@@ -1,0 +1,13 @@
+.section {
+    width: 100%;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+.header button {
+    font-size: .88rem;
+}

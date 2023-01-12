@@ -1,0 +1,31 @@
+
+.shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.shopping .add_btn {
+    background-color: #28a9ff;
+    gap: 2px;
+    color: #fff;
+    font-size: .78rem;
+    word-spacing: 1px;
+    border-radius: 12px;
+    flex-grow: 1;
+    
+}
+
+.shopping button > *:first-child {
+    border-left: 1px solid rgba(238, 238, 238, 0.247);
+    padding: 5px 15px;
+    padding-left: 10px;
+}
+.shopping button > *:last-child {
+    padding: 5px 15px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,0 +1,22 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    gap: 10px;
+}
+.title {
+    min-width: 120px;
+    max-width: 120px;
+    font-size: .9rem;
+    color: #555;
+}
+.item > *:last-child {
+    flex-grow: 1;
+    color: #555;
+    word-spacing: 2px;
+    font-size: .9rem;
+    font-family: shabnambold;
+    line-height: 25px;
+}

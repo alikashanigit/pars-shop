@@ -1,0 +1,39 @@
+.results {
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    overflow: hidden;
+    padding-top: 20px;
+    display: none;
+}
+#show {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+}
+.header > *:first-child {
+    font-family: shabnambold;
+    font-size: 1.2rem;
+}
+.header > *:last-child {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+    .results {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .results {
+        width: 50%;
+    }
+}

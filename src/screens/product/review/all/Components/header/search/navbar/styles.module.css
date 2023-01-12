@@ -1,0 +1,40 @@
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.navbar > * {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+.back_link {
+    font-size: .8rem;
+}
+.back_link > span {
+    padding-top: 2px;
+}
+
+.navbar > *:nth-child(2) { 
+    justify-content: center; 
+    flex: 2;
+}
+
+.navbar > *:nth-child(3) { 
+    justify-content: end; 
+}
+
+.navbar > *:nth-child(3) a {
+    font-size: .8rem;
+    gap: 5px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar { padding: 0 5%; }
+}

@@ -1,0 +1,44 @@
+.sizes {
+    padding: 20px 5%;
+}
+.title {
+    font-size: 1.3rem;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 5px;
+
+}
+.item {
+    width: 120px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 2px #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    flex-grow: 1;
+    gap: 5px;
+}
+.option {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.value {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.unit {
+    display: flex;
+    font-size: .7rem;
+    align-items: flex-end;
+    color: #888;
+}

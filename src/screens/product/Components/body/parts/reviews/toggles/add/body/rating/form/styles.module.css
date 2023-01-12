@@ -1,0 +1,17 @@
+.form {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.form select {
+    flex-grow: 1;
+    height: 50px;
+    background-color: rgba(244, 244, 244, 0.842);
+    border: 1px solid #ff5e4579;    
+    border-radius: 12px;
+    color: #444;
+    padding: 0 10%;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,53 @@
+@import url('./fonts.css');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: shabnamLight, bzar, sfregular;
+    color: #000000;
+    background-color: #fff;
+    direction: rtl;
+}
+button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    color: #0288e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: shabnamLight;
+}
+input {
+    border: none;
+    width: 100%;
+    font-family: shabnamLight;
+    padding: 10px 20px;
+}
+input:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #0288e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.swiper {
+    z-index: 0;
+}
+
+#backdrop {
+    z-index: 10;
+}

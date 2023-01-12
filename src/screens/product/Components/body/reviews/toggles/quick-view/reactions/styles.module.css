@@ -1,0 +1,53 @@
+.reactions {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding: 10px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;  
+}
+
+
+.reactions ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reactions ul > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.reactions ul button {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    color: #555;
+}
+.reactions ul li:first-child .badge {
+    background-color: #00d166;
+}
+.badge {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sflight;
+    font-size: .6rem;
+    color: #fff;
+    background-color: #ff5555;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.reactions > li a {
+    color: #888;
+}

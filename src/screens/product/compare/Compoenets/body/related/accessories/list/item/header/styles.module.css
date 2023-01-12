@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.header > * {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+.header > *:nth-child(2) {
+    flex: 1;
+    justify-content: center;
+    font-family: sfsemibold;
+}
+.featured {
+    direction: ltr;
+    justify-content: flex-start;
+    gap: 5px;    
+}
+.featured > * {
+    background-color: #ff374be1;
+    width: 30px;
+    height: 21px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discount {
+    color: #fff;
+    font-size: .8rem;
+    gap: 1px;
+}
+.discount > *:first-child {
+    padding-top: 1px;
+    font-size: .85rem;
+}
+.discount > *:last-child {
+    font-family: sflight;
+    font-size: .6rem;
+}
+.featured > button {
+    color: #fff;
+}

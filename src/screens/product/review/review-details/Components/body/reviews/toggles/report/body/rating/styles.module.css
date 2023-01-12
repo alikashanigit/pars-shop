@@ -1,0 +1,24 @@
+.rating {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+.container {
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.user_rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #666;
+    font-size: .8rem;
+    word-spacing: 1px;
+}

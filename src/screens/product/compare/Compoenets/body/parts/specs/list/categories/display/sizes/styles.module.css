@@ -1,0 +1,18 @@
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.value {
+    font-size: 1.2rem;
+    font-family: shabnambold;    
+    direction: ltr;
+}
+.unit {
+    font-family: shabnamlight;
+    font-size: .8rem;
+}

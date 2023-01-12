@@ -1,0 +1,12 @@
+.suggestion {
+    font-size: .75rem;
+    word-spacing: 1px;
+}
+
+.suggested {
+    color: #00d166;
+}
+
+.not_suggested {
+    color: #ff5555;
+}

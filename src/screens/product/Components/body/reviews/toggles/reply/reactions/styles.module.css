@@ -1,0 +1,28 @@
+.reactions {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding: 10px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;  
+}
+
+.reactions ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.report a {
+    font-size: .65rem;
+    word-spacing: 1px;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    color: #666; 
+}

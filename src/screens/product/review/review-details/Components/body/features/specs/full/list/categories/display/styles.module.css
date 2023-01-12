@@ -1,0 +1,17 @@
+.category {
+    /* border: 2px solid red; */
+}
+.title {
+    font-size: 1.5rem;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+
+/* Resolution */
+#resolution {
+    direction: ltr;
+}
