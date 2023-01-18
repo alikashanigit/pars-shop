@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+.body > * {
+    width: 100%;
+    padding: 20px 0;
+}

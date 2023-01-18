@@ -1,0 +1,11 @@
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions > button {
+    color: #ff4747;
+    font-size: .75rem;
+    word-spacing: 2px;
+}

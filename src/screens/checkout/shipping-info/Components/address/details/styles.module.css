@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address > * {
+    padding: 10px 0;
+    font-size: .95rem;
+    word-spacing: 1px;
+}
+
+.state_city {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .95rem;
+
+}
+.zipCode {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+}
+.zipCode > *:first-child {
+    font-size: .8rem;
+    color: #666;
+}
+
+.zipCode_value {
+    font-size: .95rem;
+    letter-spacing: 1px;
+}

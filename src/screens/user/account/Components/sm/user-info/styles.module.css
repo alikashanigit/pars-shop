@@ -1,0 +1,30 @@
+.user_info {
+    justify-content: space-between;
+    padding: 15px 20px;
+    padding-right: 28px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    color: #333;
+}
+.details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.details > div {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-size: .9rem;
+    word-spacing: 1px;
+}
+.phone {
+    color: #444;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+}
+.user_info > *:last-child {
+    font-size: .7rem;
+    color: #0288e0;
+}

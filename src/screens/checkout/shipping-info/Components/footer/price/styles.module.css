@@ -1,0 +1,20 @@
+.price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 20px;
+}
+.value {
+    color: #333;
+    letter-spacing: 1px;
+}
+.unit {
+    color: #666;
+    font-size: .6rem;
+}
+@media screen and (min-width: 992px) {
+    .value {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}

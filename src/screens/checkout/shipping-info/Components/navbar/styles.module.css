@@ -1,0 +1,19 @@
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+
+.navbar > * {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.navbar > *:nth-child(2) {
+    justify-content: center;
+    flex: 2;
+}

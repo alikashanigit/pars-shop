@@ -1,11 +1,12 @@
 #backdrop {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.252);
     width: 100%;
     display: block;
     overflow-y: auto;
     z-index: 2;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
-
 .header {
     display: flex;
     align-items: center;
@@ -15,13 +16,32 @@
     height: 50px;
     padding: 0 5%;
 }
-
 .header > div {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-
 .name {
     font-family: sflight;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .header button {
+        background-color: #eee;
+        padding: 8px;
+        border-radius: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+        margin: 50px auto;
+    }
 }

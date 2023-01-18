@@ -1,0 +1,41 @@
+.part {
+    width: 100%;
+}
+.part > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.part label {
+    font-family: bzar;
+    color: #555;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    align-items: start;
+    width: 100%;
+}
+.part input {
+    border-radius: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    padding: 4px;
+    padding-top: 9px;
+    background-color: #eee;
+    color: #333;
+    letter-spacing: 10px;  
+}
+.part input::placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+}
+.action {
+    padding: 5px;
+}
+.action > button {
+    height: 30px;
+    border: 1px solid #0288e0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: .85rem;
+}

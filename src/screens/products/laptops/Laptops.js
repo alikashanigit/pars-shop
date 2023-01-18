@@ -9,53 +9,53 @@ import Filters from './Components/filters/Filters';
 import Body from './Components/body/Body';
 import Accessories from './Components/accessories/Accessories';
 import Footer from './Components/footer/Footer';
+import Large from './Components/large/Large';
+import Shop from './Components/toggles/shop/Shop';
 
 
 export const QueryDataContext = createContext();
+export const ToggleContext = createContext();
 const Laptops = () => {
     const { pageNumber } = useParams();
     const [queryData, setQueryData] = useState({
         sort: 'newest-up',
         keyword: '',
         brands: [],
-        colors: [],
-        minPrice: '',
-        maxPrice: '',
-        types: [],
-        screenSizes: [],
-        cacheMemories: [],
-        interiorMemoryTypes: [],
-        cpuModels: [],
-        cpuFrequencies: [],
-        cpuManufacturers: [],
-        gpuManufacturers: [],
-        ramModels: [],
-        ramCapacities: [],
-        resolutions: [],
-        batteryTypes: [],
-        batteryTypes: [],
-        statuses: [],
+
+    });
+    const [toggle, setToggle] = useState({
+        shop: false,
     });
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(getProductsList(queryData, pageNumber));
+        dispatch(getProductsList(queryData, pageNumber || 1));
     }, [queryData, pageNumber]);
     return (
         <main className = {styles.main}>             
         <QueryDataContext.Provider value = {{ queryData, setQueryData }}>
-            
-            <Navbar />
-            
-            <Header />
+            <ToggleContext.Provider value = {{ toggle, setToggle }}>
+                
+                <Navbar />
+                
+                <div className = {styles.sm}>
+                    
+                    <Header />
 
-            <Filters />
-            
-            <Body />
+                    <Filters />
+                    
+                    <Body />
 
-            <Accessories />
+                    <Accessories />
 
-            <Footer />
+                    <Footer />
+                    
+                </div>
 
+                <Large />
+
+                <Shop toggle = {toggle} setToggle = {setToggle} />
+
+            </ToggleContext.Provider> 
         </QueryDataContext.Provider> 
         </main>
     );

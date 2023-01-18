@@ -1,0 +1,10 @@
+.suggestions {
+    width: 100%;
+    padding: 20px;
+}
+.suggestions > span {
+    font-family: shabnambold;
+    font-size: 1rem;
+    word-spacing: 2px;
+    color: #f85e5e;
+}

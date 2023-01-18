@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container > *:first-child {
+    font-size: .7rem;
+    word-spacing: 1px;
+    color: #666;
+}
+
+.customer_type {
+    background-color: #eee;
+    padding: 2px 8px;
+    font-size: .75rem;
+    border-radius: 5px;
+}

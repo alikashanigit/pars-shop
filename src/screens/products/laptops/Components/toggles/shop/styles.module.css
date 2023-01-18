@@ -1,0 +1,70 @@
+#backdrop {
+    background-color: #fff4;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 2;
+    display: block;
+    background-color: #fff;
+    /* overflow-y: auto; */
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    /* background-color: #333; */
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50px;
+}
+.header button {
+    background-color: #fff5;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px;
+}
+.footer > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+
+.add_btn {
+    gap: 5px;
+    font-size: .88rem;
+    word-spacing: 1px;
+    color: #ff4444;
+    border: 1px solid #ff4444;
+    border-radius: 10px;
+}
+
+.payment_btn {
+    background-color: #22a6ff;
+    color: #fff;
+    border-radius: 10px;
+}

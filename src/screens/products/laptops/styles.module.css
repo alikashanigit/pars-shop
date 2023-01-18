@@ -3,3 +3,13 @@
     min-height: 100vh;
     padding-bottom: 80px;
 }
+.lg { display: none; }
+@media screen and (min-width: 992px) {
+    .sm { display: none; }
+    .main {
+        padding: 0;
+    }
+    .lg {
+        display: flex;
+    }
+}

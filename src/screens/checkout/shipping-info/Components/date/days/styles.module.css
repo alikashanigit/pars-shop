@@ -1,0 +1,17 @@
+.list {
+    padding: 5px;
+}
+#slide {
+    width: 80px;
+}
+
+#slide button {
+    color: #333;
+    font-size: .9rem;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px #ddd;
+
+}

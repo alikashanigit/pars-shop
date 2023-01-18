@@ -6,6 +6,7 @@ import { getProductDetails } from '../../redux/product/actions';
 import Navbar from './Components/navbar/Navbar';
 import Body from './Components/body/Body';
 import Footer from './Components/footer/Footer';
+import Bar from './Components/large-screen/bar/Bar';
 
 export const ToggleContext = createContext();
 const Product = () => {
@@ -20,7 +21,7 @@ const Product = () => {
     const { product } = useSelector(state => state.productDetails);
     const dispatch = useDispatch();
     useEffect(() => {
-        !product || !product.name && dispatch(getProductDetails(id));
+        dispatch(getProductDetails(id));
     }, [])
     return (
         <main className = {styles.main}>             
@@ -28,6 +29,8 @@ const Product = () => {
 
             <Navbar />
             
+            <Bar />
+
             <span className = {styles.name}>{product && product.name}</span>
             
             <Body />

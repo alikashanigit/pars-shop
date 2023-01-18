@@ -5,22 +5,6 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
         sort,
         keyword,
         brands,
-        colors,
-        minPrice,
-        maxPrice,
-        types,
-        screenSizes,
-        cacheMemories,
-        interiorMemoryTypes,
-        cpuModels,
-        cpuFrequencies,
-        cpuManufacturers,
-        gpuManufacturers,
-        ramModels,
-        ramCapacities,
-        resolutions,
-        batteryTypes,
-        statuses,
     } = queryData;
     try {
         dispatch({ type: 'PRODUCT_LIST_REQUEST' });
@@ -31,42 +15,13 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
             },
         };
         const strBrands = JSON.stringify(brands)
-        const strColors = JSON.stringify(colors)
-        const strTypes = JSON.stringify(types)
-        const strScreenSizes = JSON.stringify(screenSizes)
-        const strCacheMemories = JSON.stringify(cacheMemories)
-        const strInteriorMemoryTypes = JSON.stringify(interiorMemoryTypes)
-        const strCpuModels = JSON.stringify(cpuModels)
-        const strCpuFrequencies = JSON.stringify(cpuFrequencies)
-        const strCpuManufacturers = JSON.stringify(cpuManufacturers)
-        const strGpuManufacturers = JSON.stringify(gpuManufacturers)
-        const strRamModels = JSON.stringify(ramModels)
-        const strRamCapacities = JSON.stringify(ramCapacities)
-        const strResolutions = JSON.stringify(resolutions)
-        const strBatteryTypes = JSON.stringify(batteryTypes)
-        const strStatuses = JSON.stringify(statuses)
 
         const queriesUrl = `
-        /api/products/list?keyword=${keyword}
+        /api/products/list?keyword=${keyword ? keyword : ''}
         &pageNumber=${pageNumber}
         &sort=${sort}
         &brands=${strBrands}
-        &colors=${strColors}
-        &minPrice=${minPrice}
-        &maxPrice=${maxPrice}
-        &types=${strTypes}
-        &screenSizes=${strScreenSizes}
-        &cacheMemories=${strCacheMemories}
-        &interiorMemoryTypes=${strInteriorMemoryTypes}
-        &cpuModels=${strCpuModels}
-        &cpuFrequencies=${strCpuFrequencies}
-        &cpuManufacturers=${strCpuManufacturers}
-        &gpuManufacturers=${strGpuManufacturers}
-        &ramModels=${strRamModels}
-        &ramCapacities=${strRamCapacities}
-        &resolutions=${strResolutions}
-        &batteryTypes=${strBatteryTypes}
-        &statuses=${strStatuses}
+
         `;
         
         const { data } = await axios.get(queriesUrl, {}, config);
@@ -85,7 +40,6 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
 
     };
 };
-
 
 export const getForYouProductList = () => async(dispatch, getState) => {
     try {
@@ -121,7 +75,6 @@ export const getForYouProductList = () => async(dispatch, getState) => {
 
     };
 };
-
 
 export const getAccessoriesList = (queryData, relatedCategory) => async(dispatch) => {
     const {

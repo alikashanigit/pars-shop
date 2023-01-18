@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+    background-color: #fff;
+}
 .list {
     width: 100%;
 }
@@ -5,14 +9,13 @@
     padding-bottom: 45px;
 }
 #slide {
-    max-width: 85%;
+    max-width: 100%;
 }
 #slide img {
     width: 100%;
     height: 250px;
     object-fit: contain;
 }
-
 .colors {
     display: flex;
     align-items: center;
@@ -38,4 +41,9 @@
     height: 100%;
     border-radius: 50%;
     padding: 2px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .container { display: none; }
 }

@@ -6,12 +6,16 @@ import Features from './features/Features';
 import Related from './related/Related';
 import Reviews from './reviews/Reviews';
 import Options from './options/Options';
+import Header from './lg-header/Header';
 
 
 const Body = () => {
     return (
         <div className = {styles.body}>
             
+            <Header />
+
+
             <Photos />
             
             <Ratings />

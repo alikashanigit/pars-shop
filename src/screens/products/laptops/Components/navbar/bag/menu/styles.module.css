@@ -1,0 +1,23 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu li {
+    width: 100%;
+}
+
+.menu a {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menu a > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .88rem;
+    word-spacing: 1px;
+}

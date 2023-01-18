@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    padding: 0 5%;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-family: shabnambold;
+}
+.header a {
+    font-size: .88rem;
+    word-spacing: 1;
+    gap: 5px;
+}
+.header > * {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+}
+.header > *:nth-child(2) {
+    justify-content: center;
+}
+.header > *:nth-child(1) {
+    justify-content: end;
+}
+.header > *:nth-child(3) {
+    justify-content: start;
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        flex-direction: row;
+    }
+    .header > *:nth-child(1) {
+        justify-content: flex-start;
+    }
+    .header > *:nth-child(3) {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,12 @@
+.item {
+    width: 100%;
+}
+
+.item a {
+    width: 100%;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px #eee;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+

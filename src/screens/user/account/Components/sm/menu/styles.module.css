@@ -1,0 +1,7 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border-radius: 15px;
+    color: #333;
+}

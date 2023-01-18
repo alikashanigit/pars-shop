@@ -1,5 +1,5 @@
 .section {
-    width: calc(100% - 40px);
+    width: calc(100%);
     background-color: #f4f4f4;
     box-shadow: 0 0 2px #eee;
     border-radius: 15px;
@@ -26,8 +26,8 @@
 .add_review > * {
     justify-content: space-between; 
     gap: 10px;
-    color: #eee;
-    background-color: rgb(38, 38, 38);
+    color: rgb(53, 167, 255);
+    background-color: rgba(238, 238, 238, 0.365);
     border-radius: 12px;
     padding: 12px 20px;
     padding-right: 25px;

@@ -1,0 +1,28 @@
+.section {
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+.title {
+    font-size: .8rem;
+    word-spacing: 1px;
+    color: #666;
+}
+.prices {
+    padding: 5px 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-top: 8px;
+}
+.item:last-child {
+    border-bottom: none;
+}
+.item > *:first-child {
+    font-size: .75rem;
+    color: #444;
+}

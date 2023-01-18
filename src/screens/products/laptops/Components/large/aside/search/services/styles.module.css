@@ -1,0 +1,15 @@
+.services {
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 5px;
+    opacity: 0;
+}
+#open {
+    opacity: 1;
+}
+.services > span {
+    display: block;
+    font-family: shabnambold;
+}
+
+

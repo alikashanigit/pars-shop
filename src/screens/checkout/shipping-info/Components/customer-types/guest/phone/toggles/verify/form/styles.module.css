@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+}
+.container {
+    padding: 5px;
+}
+.container label {
+    font-size: .8rem;
+    padding-right: 5px;
+    color: #555;
+}
+.container input {
+    background-color: #eee;
+    border-radius: 12px;
+}
+.container input::placeholder {
+    font-size: .9rem;
+    word-spacing: 1px;
+}
+.resend {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: .65rem;
+    padding: 5px;
+}
+.form > button {
+    background-color: #2faafc;
+    color: #fff;
+    font-size: .9rem;
+    padding: 4px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+}

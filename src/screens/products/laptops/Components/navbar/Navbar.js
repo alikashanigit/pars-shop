@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Menu from './menu/Menu';
@@ -12,10 +13,8 @@ const Navbar = ({ isLanding, lastPagePath, lastPageTitle }) => {
         menu: false,
         bag: false,
     });
-    const openMenuHandler = () => setToggle({ menu: true });
     const openBagHandler = () => setToggle({ bag: true });
-    const bagItems = [1, 2, 3];
-    const notifications = [1, 2, 3, 4, 5];
+    const { bagItems } = useSelector(state => state.bag);
     return (
         <>
         <nav className = {styles.navbar}>
@@ -35,11 +34,11 @@ const Navbar = ({ isLanding, lastPagePath, lastPageTitle }) => {
             </div>
             <div>
                 <button 
-                // onClick = {openBagHandler}
+                onClick = {openBagHandler}
                 >
                     <ShoppingBagIcon />
-                    {notifications.length && 
-                    <span className = {styles.badge}>{notifications.length}</span>
+                    {bagItems.length && 
+                    <span className = {styles.badge}>{bagItems.length}</span>
                     }
                 </button>
                 <button 
@@ -50,9 +49,6 @@ const Navbar = ({ isLanding, lastPagePath, lastPageTitle }) => {
                         <span></span>
                         <span></span>
                     </div>
-                    {bagItems.length && 
-                    <span className = {styles.badge}>{bagItems.length}</span>
-                    }
                 </button>
             </div>
         </nav>
