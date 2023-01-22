@@ -1,0 +1,37 @@
+.btn {
+    padding: 10px 20px;
+    border-bottom: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #444;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    text-align: right;
+}
+.btn > *:first-child {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;    
+}
+.btn > *:last-child {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 4px;
+}
+.btn > *:last-child > * {
+    background-color: #d2d2d298;
+    padding: 3px 6px;
+    font-size: .7rem;
+    color: #333;
+    border-radius: 6px;
+}
+.title {
+    font-size: .88rem;
+    word-spacing: 1px;
+    
+}

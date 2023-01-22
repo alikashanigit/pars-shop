@@ -7,11 +7,11 @@ import Container from './container/Container';
 
 const Filters = ({ filtersOpen, setFiltersOpen }) => {
     return (
-        <Backdrop sx = {{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }} open = {filtersOpen}>
+        <Backdrop id = {styles.backdrop} open = {filtersOpen}>
             <Container />
             <div className = {styles.footer}>
                 <button onClick={() => setFiltersOpen(false)}>
-                    X
+                    لغو
                 </button>
             </div>
         </Backdrop>

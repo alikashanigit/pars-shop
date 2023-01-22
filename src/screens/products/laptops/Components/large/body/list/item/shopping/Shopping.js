@@ -19,13 +19,15 @@ const Shopping = ({ item }) => {
     };
     return (
         <div className={styles.shopping}>
+            
             <button className = {styles.add_btn} onClick = {() => openShop(item._id)}>
                 <span>خرید</span>
+            </button>
                 <div>
                     <span>از</span>
                     <Price value = {item.featured.discount && item.featured.discount.price} />
                 </div>
-            </button>
+
             {item.featured.discount && <OldPrice value = {item.minPrice} />}
             
         </div>

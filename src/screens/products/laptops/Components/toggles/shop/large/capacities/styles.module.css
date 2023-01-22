@@ -1,0 +1,40 @@
+.capacities {
+    padding-top: 20px;
+}
+.capacities > span {
+    font-size: 1.2rem;
+    word-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    width: 100%;
+}
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    transition: all .4s;
+}
+.value {
+    font-size: 1.8rem;
+}
+.unit {
+    font-size: .7rem;
+    color: #888;
+}
+#selected_item {
+    border: 1px solid #0288e0;
+}

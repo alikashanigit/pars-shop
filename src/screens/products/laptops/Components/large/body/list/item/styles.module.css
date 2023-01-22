@@ -1,8 +1,8 @@
 .item {
-    width: 300px;
+    width: 280px;
     background-color: #fff;
     box-shadow: 0 0 2px #ddd;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all .4s ease-in-out;
     position: relative;
 }

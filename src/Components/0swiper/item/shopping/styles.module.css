@@ -1,0 +1,29 @@
+.shopping {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 15px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.shopping > *:not(#per) {
+    flex-grow: 1;
+}
+#per {
+    background-color: #ff4747db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sfregular;
+    
+    font-size: .65rem;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+}

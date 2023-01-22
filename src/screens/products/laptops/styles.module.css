@@ -3,6 +3,11 @@
     min-height: 100vh;
     padding-bottom: 80px;
 }
+.sm > span {
+    padding: 15px;
+}
+
+
 .lg { display: none; }
 @media screen and (min-width: 992px) {
     .sm { display: none; }

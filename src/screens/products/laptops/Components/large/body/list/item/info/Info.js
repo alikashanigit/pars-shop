@@ -20,7 +20,7 @@ const Info = ({ item }) => {
                 
                 <button className = {styles.category}>
                     {/* <span>لوازم جانبی</span> */}
-                    <span>{item.type}</span>
+                    <span className={styles.type}>{item.type}</span>
                 </button>
 
                 <div className = {styles.features}>

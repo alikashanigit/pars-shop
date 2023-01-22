@@ -10,8 +10,6 @@ const List = () => {
             <Item title = 'پرفروش‌ترین‌‌ها' path = 'top-sales' />
             <Item title = 'محبوب‌ترین‌ها' path = 'top-ratings' />
             <Item title = 'جدیدترین‌ها' path = 'newest' />
-            <Item title = 'فروش محدود' path = 'limit-sales' />
-            <Item title = 'رویداد پارس' path = 'pars-events' />
         </ul>      
     );
 };

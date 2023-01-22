@@ -1,17 +1,16 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import styles from './styles.module.css';
-import { Backdrop, CircularProgress } from '@mui/material';
+import { Backdrop } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToBag } from '../../../../../../redux/bag/actions';
 import Body from './body/Body';
+import Large from './large/Large';
 
 
 export const DataContext = createContext();
 const Shop = ({ toggle, setToggle }) => {
     const dispatch = useDispatch();
-    const [existItem, setExistItem] = useState(false);
     const { product, loading } = useSelector(state => state.productDetails);
-    const { bagItems } = useSelector(state => state.bag);
     const [data, setData] = useState({
         color: '',
         capacity: '',
@@ -29,17 +28,14 @@ const Shop = ({ toggle, setToggle }) => {
     };
     return (
         <Backdrop id = {styles.backdrop} open = {toggle.shop}>
-            
-            <Backdrop open = {loading}>
-                <CircularProgress />
-            </Backdrop>
-            
-            <DataContext.Provider value={{ data, setData }}>
+
+            <DataContext.Provider value = {{ data, setData }}>
+                
                 <div className={styles.container}>
                     
                     <div className = {styles.header}>
                         <span>
-                            خرید محصول
+                            خرید {product.name}
                         </span>
                         <button onClick={() => setToggle({...toggle, shop: false })}>
                             <svg xmlns="http://www.w3.org/2000/svg" 
@@ -50,7 +46,6 @@ const Shop = ({ toggle, setToggle }) => {
                     </div>
                     
                     <Body />
-
 
                 </div>
 
@@ -66,7 +61,11 @@ const Shop = ({ toggle, setToggle }) => {
                         پرداخت
                     </button>
                 </div>
+
+                <Large setToggle={setToggle} />
+
             </DataContext.Provider>
+
         </Backdrop>
     );
 }

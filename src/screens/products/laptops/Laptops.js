@@ -13,15 +13,17 @@ import Large from './Components/large/Large';
 import Shop from './Components/toggles/shop/Shop';
 
 
+
 export const QueryDataContext = createContext();
 export const ToggleContext = createContext();
 const Laptops = () => {
     const { pageNumber } = useParams();
+    const { type } = useParams();
     const [queryData, setQueryData] = useState({
         sort: 'newest-up',
         keyword: '',
         brands: [],
-
+        filteringKeyword: '',
     });
     const [toggle, setToggle] = useState({
         shop: false,
@@ -39,7 +41,8 @@ const Laptops = () => {
                 
                 <div className = {styles.sm}>
                     
-                    <Header />
+                    <span>لپتاپ‌ها</span>
+
 
                     <Filters />
                     
@@ -52,6 +55,8 @@ const Laptops = () => {
                 </div>
 
                 <Large />
+
+
 
                 <Shop toggle = {toggle} setToggle = {setToggle} />
 

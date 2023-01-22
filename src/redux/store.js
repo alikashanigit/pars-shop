@@ -127,9 +127,11 @@ const bagItemsFromStorage = localStorage.getItem('bagItems')
 
 const phoneVerificationInfoFromStorage = localStorage.getItem('phoneVerificationInfo')
     ? JSON.parse(localStorage.getItem('phoneVerificationInfo'))
-    : [];
+    : {};
 
-   
+const searchHistoryInfoFromStorage = localStorage.getItem('searchHistoryInfo')
+    ? JSON.parse(localStorage.getItem('searchHistoryInfo'))
+    : [];
 
 const initialState = {
     userLogin: {
@@ -137,6 +139,7 @@ const initialState = {
             firstName: 'ali'
         },
         phoneVerificationInfo: phoneVerificationInfoFromStorage,
+        searchHistoryInfo: searchHistoryInfoFromStorage,
     },
     bag: {
         bagItems: bagItemsFromStorage,

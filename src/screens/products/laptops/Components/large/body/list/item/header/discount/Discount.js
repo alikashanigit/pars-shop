@@ -8,7 +8,7 @@ const Discount = ({ item }) => {
         <div className = {styles.discount}>
             {item.featured.discount && item.featured.discount.price &&
             <>
-            <span>{item.featured.discount && item.featured.discount.percentage}</span>
+            <span className={styles.value}>{item.featured.discount && item.featured.discount.percentage}</span>
             <span>٪</span>
             </>
             }

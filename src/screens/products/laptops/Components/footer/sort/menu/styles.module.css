@@ -1,8 +1,8 @@
 #menu {
-    /* background-color: #aaa; */
-    width: 300px;
+    width: 250px;
     padding: 0;
     border: 20px;
-    background-color: #ccc;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 3px #aaa;
     
 }

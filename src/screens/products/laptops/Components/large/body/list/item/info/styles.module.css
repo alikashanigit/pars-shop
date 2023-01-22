@@ -18,6 +18,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;    
+    color: #444;
+}
+.brand {
+    color: #777;
+    font-size: .75rem;
+}
+.type {
+    font-size: .65rem;
+    color: #888;
+    margin-top: -2px;
 }
 .cat_brand {
     display: flex;

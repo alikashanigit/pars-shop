@@ -6,12 +6,14 @@
     
 }
 .value {
-    letter-spacing: 2px;
-    color: #fff;
+    letter-spacing: 1px;
+    color: #333;
+    font-family: sflight;
+    font-size: .75rem;
 }
 .unit {
     font-size: .6rem;
-    color: #eee;
+    color: #888;
 }
 .old_price {
     display: flex;
@@ -22,6 +24,7 @@
 .old_price .value {
     letter-spacing: 2px;
     color: #444;
-    font-size: .85rem;
     text-decoration: line-through;
+    font-family: sflight;
+    font-size: .65rem;
 }

@@ -1,0 +1,35 @@
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+    position: relative;
+}
+.form > svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.form input {
+    border-radius: 12px;
+    height: 38px;
+    width: 250px;
+    font-size: .88rem;
+    padding-right: 30px;
+    box-shadow: 0 0 3px #ccc;
+}
+.form input::placeholder {
+    font-size: .8rem;
+    word-spacing: 1px;
+}
+.form button {
+    padding: 1px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(17, 17, 17, 0.129);
+}

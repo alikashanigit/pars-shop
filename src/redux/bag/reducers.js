@@ -62,9 +62,7 @@ export const bagReducer = (
                 return {
                     ...state,
                     bagItems: state.bagItems.filter((x) => 
-                        x.product !== itemExists.product &&
-                        x.color !== itemExists.color &&
-                        x.capacity !== itemExists.capacity
+                        x !== itemExists 
                     ),
                 };
             };

@@ -21,8 +21,12 @@
     height: 40px;
     padding-right: 45px;
     font-size: .88rem;
-    background-color: #fff5;
-    background-color: rgba(170, 170, 170, 0.48);
+    background-color: rgba(235, 235, 235, 0.836);
+    box-shadow: 0 0 3px #aaa;
+}
+.form input::placeholder {
+    font-size: .78rem;
+    word-spacing: 1px;
 }
 .form button {
     padding: 1px;

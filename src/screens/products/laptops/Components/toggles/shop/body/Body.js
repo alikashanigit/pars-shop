@@ -12,12 +12,16 @@ const Body = () => {
         <div className = {styles.body}>
             
             <Colors />
-            
-            <Capacities />
+           
+            <div>
+                
+                <Capacities />
 
-            <Qty />
+                <Qty />
 
-            <Price />
+                <Price />
+           
+            </div>
 
         </div>
     );

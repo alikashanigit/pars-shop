@@ -4,10 +4,13 @@
     gap: 5px;
 }
 .value {
-    letter-spacing: 2px;
-    color: #444;
+    letter-spacing: 1px;
+    color: #555;
+    font-family: sfsemibold;
 }
 .unit {
     font-size: .7rem;
     color: #666;
+    color: #888;
+    padding-top: 2px;
 }

@@ -1,0 +1,17 @@
+.list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.header button {
+    font-size: .8rem;
+    word-spacing: 1px;
+}

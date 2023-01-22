@@ -1,17 +1,39 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Item from './item/Item';
+import { useNavigate } from 'react-router';
+import Price from './item/price/Price';
+import { Link } from 'react-router-dom';
 
 
 
 const Items = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { bagItems } = useSelector(state => state.bag);
+    const checkoutHandler = () => {
+        localStorage.setItem('checkoutLastPath', JSON.stringify('/'));
+        navigate('/checkout/shipping-info');
+    };
+    const totalPrice = bagItems.reduce((acc, item) => acc + item.price * item.qty, 0);
     return (
-        <div className = {styles.items}>
-            <span>سبد خرید</span>
+        bagItems.length > 0
+        ? <div className = {styles.items}>
+            <div className={styles.header}>
+                <div>
+                    <span>سبد خرید</span>
+                    <Price value = {totalPrice} />
+                </div>
+                <div>
+                    <button onClick={checkoutHandler}>
+                        پرداخت
+                    </button>
+                </div>
+            </div>
             {bagItems?.map(item => <Item item = {item}/>)}
         </div>
+        : <span className={styles.empty_text}>سبد خرید خالی می‌باشد</span>
     );
 };
 

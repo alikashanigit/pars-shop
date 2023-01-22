@@ -1,12 +1,14 @@
 import React from 'react';
-import Search from './search/Search';
 import styles from './styles.module.css';
+import Filters from './filters/Filters';
 
 
 const Aside = () => {
     return (
         <aside className = {styles.aside}>
-            <Search />
+            
+            <Filters />
+
         </aside>
     );
 };

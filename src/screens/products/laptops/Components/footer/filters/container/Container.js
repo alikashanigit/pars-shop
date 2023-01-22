@@ -4,6 +4,7 @@ import Part from './part/Part';
 import Brands from './brands/Brands';
 import { QueryDataContext } from '../../../../Laptops';
 
+
 export const FiltersContext = createContext();
 const Container = () => {
     const { queryData, setQueryData } = useContext(QueryDataContext);

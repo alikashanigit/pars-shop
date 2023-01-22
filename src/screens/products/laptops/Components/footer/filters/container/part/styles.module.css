@@ -1,7 +1,7 @@
 .part {
     width: 100%;
-    background-color: #f8f8f8;
-    border: 1px solid #eee;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 3px #aaa;
     border-radius: 10px;
     margin: 10px 0;
     max-height: 400px;

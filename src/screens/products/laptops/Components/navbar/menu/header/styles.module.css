@@ -24,3 +24,10 @@
     top: 0;
     left: 0;
 }
+
+.header button {
+    background-color: #ddd;
+    padding: 5px;
+    color: #444;
+    border-radius: 50%;
+}

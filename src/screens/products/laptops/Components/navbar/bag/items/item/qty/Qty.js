@@ -13,17 +13,17 @@ const Qty = ({ item }) => {
     const { product } = useSelector(state => state.productDetails);
     
     useEffect(() => {
-        item.qty && setQty(item.qty);
+        setQty(item.qty);
     }, [item.qty]);
 
     const incrementHandler = () => {
-        setQty(qty + 1)
+        setQty(() => qty + 1)
         dispatch(addToBag(
             {
                 product: item.product,
                 color: item.color,
                 capacity: item.capacity,
-                qty: qty,
+                qty: qty + 1,
                 price: item.price,
             }
         ));

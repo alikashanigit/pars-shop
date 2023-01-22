@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Backdrop from '@mui/material/Backdrop';
-import Categories from './categories/Categories';
+import ProductCategories from './product-categories/ProductCategories';
 import Header from './header/Header';
 import Featured from './featured/Featured';
 import Support from './support/Support';
@@ -11,10 +11,10 @@ import Support from './support/Support';
 const Menu = ({ toggle, setToggle }) => {
     
     return (
-        <Backdrop id = {styles.backdrop} open = {toggle.menu}>
+        <Backdrop id = {styles.backdrop} open = {toggle.categories}>
             <div className = {styles.container}>
                 <Header setToggle = {setToggle} />
-                <Categories />
+                <ProductCategories />
                 <Featured />
                 <Support />
             </div>

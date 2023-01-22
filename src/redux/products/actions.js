@@ -9,11 +9,6 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
     try {
         dispatch({ type: 'PRODUCT_LIST_REQUEST' });
 
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        };
         const strBrands = JSON.stringify(brands)
 
         const queriesUrl = `
@@ -24,7 +19,7 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
 
         `;
         
-        const { data } = await axios.get(queriesUrl, {}, config);
+        const { data } = await axios.get(queriesUrl);
 
         dispatch({ 
             type: 'PRODUCT_LIST_SUCCESS',
@@ -32,10 +27,12 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
         });
 
     } catch (error) {
-
+        const message = error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
         dispatch({ 
             type: 'PRODUCT_LIST_FAIL',
-            payload: error.meesage && error.meesage.data,
+            payload: message,
         });
 
     };
@@ -46,8 +43,8 @@ export const getForYouProductList = () => async(dispatch, getState) => {
 
         dispatch({ type: 'PRODUCT_LIST_FOR_YOU_REQUEST' });
 
-        // const { userLogin: { userInfo } } = getState():
-        const userInfo = { token: '' };
+        const { userLogin: { userInfo } } = getState();
+
         const config = {
             headers: {
                 'Content-Type': 'application/json',
@@ -67,10 +64,12 @@ export const getForYouProductList = () => async(dispatch, getState) => {
         });
 
     } catch (error) {
-
+        const message = error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message
         dispatch({ 
             type: 'PRODUCT_LIST_FOR_YOU_FAIL',
-            payload: error.meesage && error.meesage.data,
+            payload: message,
         });
 
     };
@@ -110,7 +109,7 @@ export const getAccessoriesList = (queryData, relatedCategory) => async(dispatch
         &relatedCategory=${relatedCategory}
         `;
         
-        const { data } = await axios.get(queriesUrl, {}, config);
+        const { data } = await axios.get(queriesUrl, config);
 
         dispatch({ 
             type: 'PRODUCT_ACCESSORIES_LIST_SUCCESS',

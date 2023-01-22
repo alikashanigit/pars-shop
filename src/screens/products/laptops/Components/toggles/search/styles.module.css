@@ -1,0 +1,40 @@
+#backdrop {
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    border: 2px solid blue;
+ 
+ 
+}
+
+.container {
+    background-color: red;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+    color: #333;
+}
+.header > *:first-child {
+    
+    font-size: 1.2rem;
+    
+}
+.header > *:last-child {
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 992px) {
+    .results {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .results {
+        width: 50%;
+    }
+}

@@ -4,6 +4,7 @@
     -webkit-backdrop-filter: blur(20px);
     padding: 10px;
     z-index: 5;
+    background-color: #fff;
 }
 .container {
     width: 100%;

@@ -17,7 +17,7 @@ const Shopping = () => {
                 <Price value = {product.minPrice} />
             </button>
 
-            <OldPrice value={product.featured.discount.price} />
+            <OldPrice value={product.featured.discount && product.featured.discount.price} />
         </div>
     );
 };

@@ -1,8 +1,16 @@
 .aside {
-    width: 300px;
+    min-width: 250px;
     height: 100vh;
     position: sticky;
     top: 0;
     right: 0;
+    overflow-y: auto;
     border-left: 1px solid #eee;
+}
+
+@media screen and (min-width: 1200px) {
+    .aside {
+        width: 320px;
+        padding-right: 2%;
+    }
 }
