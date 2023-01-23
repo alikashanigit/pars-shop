@@ -1,0 +1,58 @@
+.details {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+}
+.details > *:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.status {
+    font-size: .85rem;
+    color: #10b761;
+}
+.code {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.code .title {
+    font-size: .75rem;
+    word-spacing: 1px;
+    color: #555;
+}
+.code .value {
+    letter-spacing: 2px;
+    font-size: 1.05rem;
+    color: #333;
+}
+.dates {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dates > * {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 3px;
+}
+.dates .title {
+    font-size: .7rem;
+    word-spacing: 1px;
+    color: #666666;
+}
+.dates .value {
+    word-spacing: 1px;
+    font-size: .9rem;
+    color: #333;
+}
+.price > span {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    word-spacing: 1px;
+    color: #555;
+}

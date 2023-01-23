@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductDetails } from '../../../../redux/product/actions';
-import { addBenefit } from '../../../../redux/product/reviews/product/actions';
 import Navbar from './Components/navbar/Navbar';
 import Suggestion from './Components/suggestion/Suggestion';
 import Footer from './Components/footer/Footer';
@@ -27,7 +26,7 @@ const Add = () => {
 
             <ul className = {styles.features}>
                 <li className = {styles.item}>
-                    <Link to = ''>
+                    <Link to = 'benefits'>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             width = '20'
@@ -47,12 +46,12 @@ const Add = () => {
                     </Link>
                     {addedOptions && addedOptions.length > 0 &&
                     <ul className = {styles.list}>
-                        
+                        <li>s</li>    
                     </ul>
                     }
                 </li>
                 <li className = {styles.item}>
-                    <Link to = ''>
+                    <Link to = 'disadvantages'>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             width = '20'

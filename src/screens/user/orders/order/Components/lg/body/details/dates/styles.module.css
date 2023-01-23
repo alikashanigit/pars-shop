@@ -1,0 +1,28 @@
+.dates {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.dates > * {
+    width: 50%;
+    flex-grow: 1;
+}
+.title {
+    font-size: .88rem;
+    word-spacing: 1px;
+    color: #666;
+}
+.dates > * > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 5px;
+}
+.day {
+    color: #333;
+}
+.time {
+    color: #333;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}

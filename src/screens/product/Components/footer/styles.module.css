@@ -24,13 +24,25 @@
     gap: 5px;
     padding: 2px;   
 }
-
 .footer > * {
     position: relative;
     z-index: 1;
     height: 100%;
 }
-
+.footer > *:first-child {
+    width: 50%;
+    padding: 3px;
+}
+.footer > *:first-child button {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #2fabfe;
+    color: #fff;
+    border-radius: 12px;
+    font-size: .88rem;
+    word-spacing: 1px;
+}
 .menu {
     display: flex;
     align-items: center;

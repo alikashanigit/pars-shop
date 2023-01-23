@@ -1,5 +1,43 @@
 import axios from "axios";
 
+
+
+export const getOrders = (queryData) => async(dispatch, getState) => {
+    try {
+        dispatch({
+            type: 'USER_ORDER_LIST_REQUEST',
+        });
+        
+        const { userLogin: { userInfo } } = getState();
+
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${userInfo.token}`
+            },
+        };
+
+        const { data } = await axios.get(
+            `/api/user/orders/?status=${queryData}`,
+            config,
+        );
+
+        dispatch({
+            type: 'USER_ORDER_LIST_SUCCESS',
+            payload: data,
+        });
+
+    } catch (error) {
+
+        dispatch({
+            type: 'USER_ORDER_LIST_FAIL',
+            payload: error,
+        });
+
+    };
+
+};
+
 export const getActiveOrders = (queryData) => async(dispatch, getState) => {
 
     
@@ -39,7 +77,6 @@ export const getActiveOrders = (queryData) => async(dispatch, getState) => {
     };
 
 };
-
 export const getDeliveredOrders = (queryData) => async(dispatch, getState) => {
 
     
@@ -79,7 +116,6 @@ export const getDeliveredOrders = (queryData) => async(dispatch, getState) => {
     };
 
 };
-
 export const getCanceledOrders = (queryData) => async(dispatch, getState) => {
 
     
@@ -119,7 +155,6 @@ export const getCanceledOrders = (queryData) => async(dispatch, getState) => {
     };
 
 };
-
 export const getReturnedOrders = (queryData) => async(dispatch, getState) => {
 
     
@@ -198,3 +233,42 @@ export const getOrderDetails = (id) => async(dispatch, getState) => {
     };
 
 };
+
+export const getOrderItemsSimilarList = (id) => async(dispatch, getState) => {
+    
+    try {
+        
+        dispatch({
+            type: 'USER_ORDER_ITEMS_SIMILAR_LIST_REQUEST',
+        });
+
+        const { userLogin: { userInfo } } = getState();
+
+        const config = {
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${userInfo.token}`
+            },
+        };
+
+        const { data } = await axios.get(
+            `/api/user/orders/details/${id}/similar`,
+            config,
+        );
+
+        dispatch({
+            type: 'USER_ORDER_ITEMS_SIMILAR_LIST_SUCCESS',
+            payload: data,
+        });
+
+    } catch (error) {
+
+        dispatch({
+            type: 'USER_ORDER_ITEMS_SIMILAR_LIST_FAIL',
+            payload: error,
+        });
+
+    };
+
+};
+

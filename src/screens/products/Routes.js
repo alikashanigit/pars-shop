@@ -7,8 +7,8 @@ const ProductsRoutes = () => {
     return (
         <Routes>
             
-            <Route path = '/' element = {<Laptops />} />
-            <Route path = '/page/:pageNumber/' element = {<Laptops />} />            
+            <Route path = '/products/laptops' element = {<Laptops />} />
+            <Route path = '/products/laptops/page/:pageNumber/' element = {<Laptops />} />            
 
         </Routes>
     );

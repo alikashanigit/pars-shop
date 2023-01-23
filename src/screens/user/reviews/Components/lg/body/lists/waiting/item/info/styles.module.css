@@ -1,0 +1,22 @@
+.info {
+    text-align: left;
+    padding: 0 5px;
+    flex-grow: 1;
+    direction: ltr;
+}
+.name {
+    font-family: sflight;
+    width: 140px;
+    direction: ltr;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .85rem;
+    color: #333;
+}
+.brand {
+    color: #666;
+    font-size: .75rem;
+}

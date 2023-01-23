@@ -1,0 +1,65 @@
+.section {
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+.container {
+    padding: 10px 0;
+}
+.container:first-child {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0;
+}
+.title {
+    font-size: .8rem;
+    word-spacing: 1px;
+    color: #666;
+}
+.value {
+    font-size: .95rem;
+    word-spacing: 1px;
+    color: #444;
+    text-align: center;
+    padding: 2px 10px;
+    word-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.value > *:first-child {   
+    gap: 10px;
+}
+.value > *:last-child {
+    letter-spacing: 1px;
+    font-size: .92rem;
+}
+#address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.state_city {
+    display: flex;
+    align-items: center;
+    
+}
+.street {
+    font-size: .9rem;
+    word-spacing: 1px;
+}
+.zipCode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.zipCode > *:first-child {
+    color: #666;
+    font-size: .8rem;
+}
+.zipCode > *:last-child {
+    letter-spacing: 2px;
+}

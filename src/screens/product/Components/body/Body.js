@@ -15,7 +15,6 @@ const Body = () => {
             
             <Header />
 
-
             <Photos />
             
             <Ratings />

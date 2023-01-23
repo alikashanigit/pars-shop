@@ -1,0 +1,31 @@
+.qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    display: flex;
+    width: 200px;
+    height: 45px;
+    margin: 20px auto;
+}
+
+.btns {
+    display: flex;
+    /* height: 100%; */
+}
+
+
+.btns button {
+    flex-grow: 1;
+    padding: 10px 15px;
+    justify-content: center;
+    border-left: 1px solid rgba(238, 238, 238, 0.561);
+    color: #666;
+}
+
+.qty {
+    font-family: sfsemibold;
+    font-size: 1.5rem;
+    color: #444;
+}

@@ -23,24 +23,23 @@ export const order = {
             zipCode: '۶۵۲۷۵۸۹۰۵',
             details: '',
         },
+        dates: {
+            order: {
+                day: 'شنبه ۳۰ مهر ۱۴۰۱',
+                time: '۲۲:۳۷',
+            },
+            deliver: {
+                day: 'شنبه ۳۲ مهر ۱۴۰۱',
+                time: '۹:۵۵',
+            },
+        },
     },
     paymentInfo: {
         type: 'آنلاین',
         method: 'درگاه ملت',
     },
     code: '۷۷۸۲۴',
-    dates: {
-        ordered: {
-            day: 'شنبه ۳۰ مهر ۱۴۰۱',
-            time: '۲۲:۳۷',
-        },
-        delivered: {
-            // day: 'شنبه ۳۲ مهر ۱۴۰۱',
-            // time: '۹:۵۵',
-            day: '',
-            time: '',
-        },
-    },
+    
     // status: 'تحویل شده',
     status: 'فعال',
     items: [

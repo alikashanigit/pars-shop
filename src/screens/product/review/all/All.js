@@ -20,11 +20,9 @@ const All = () => {
     });
     const [queryData, setQueryData] = useState({
         sort: 'newest-up',
-        keyword: '',
-        
+        keyword: '',      
     });
-    const { product } = useSelector(state => state.productDetails);
-    
+    const { product } = useSelector(state => state.productDetails);  
     useEffect(() => {
         dispatch(getProductDetails(id))
     }, [id]);
@@ -35,13 +33,13 @@ const All = () => {
         <main className = {styles.main}>
         <QueryDataContext.Provider value = {{ queryData, setQueryData }}>
             <ToggleContext.Provider value = {{ toggle, setToggle }}>
+                
                 <Navbar />
 
                 <Header />
 
                 <List />
-
-                <Footer />
+                
             </ToggleContext.Provider>
         </QueryDataContext.Provider>
         </main>

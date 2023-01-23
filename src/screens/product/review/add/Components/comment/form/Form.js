@@ -6,22 +6,27 @@ import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router';
 import ThumbUpRoundedIcon from '@mui/icons-material/ThumbUpRounded';
 import ThumbDownAltRoundedIcon from '@mui/icons-material/ThumbDownAltRounded';
-
+import ReplyAllRoundedIcon from '@mui/icons-material/ReplyAllRounded';
+import Replies from './replies/Replies';
 
 const review = {
     likes: [1,2,3,4],
     dislikes: [1,4],
+    replies: [1,2,3,4,5,6,7]
 };
 const Form = ({ open, setOpen }) => {
     const dispatch = useDispatch();
     const { id } = useParams();
+    const [repliesOpen, setRepliesOpen] = useState(false);
     const [comment, setComment] = useState('');
     const closeHandler = () => setOpen(false);
+    const openReplies = () => setRepliesOpen(true);
     const addCommentHandler = (e) => {
         e.preventDefault();
         comment && dispatch(addComment(id, comment));
     };
     return (
+        <>
         <Backdrop id = {styles.backdrop} open = {open}>
             <div className={styles.container}>
                 <div className={styles.header}>
@@ -42,6 +47,10 @@ const Form = ({ open, setOpen }) => {
                         <ThumbDownAltRoundedIcon />
                         <span>{review.dislikes.length}</span>
                     </div>
+                    <button onClick = {openReplies}>
+                        <ReplyAllRoundedIcon style={{ color: '#0288e0'}} />
+                        <span>{review.dislikes.length}</span>
+                    </button>
                 </div>
                 <form className = {styles.form}>
                     <label htmlFor='product_review_add_comment_form'>نظرتان را بنویسید</label>
@@ -55,6 +64,8 @@ const Form = ({ open, setOpen }) => {
                 </form>
             </div>
         </Backdrop>
+        <Replies open={repliesOpen} setRepliesOpen = {setRepliesOpen} />
+        </>
     );
 };
 

@@ -7,7 +7,7 @@ import Dates from './dates/Dates';
 import ShippingInfo from './shipping-info/ShippingInfo';
 import PaymentInfo from './payment-info/PaymentInfo';
 import Items from './items/Items';
-import { order } from '../../data';
+import { order } from '../../../order/data';
 import Prices from './prices/Prices';
 
 
@@ -17,13 +17,12 @@ const Small = () => {
     return (
         <div className = {styles.container}>
             
-            <Navbar />
             
             <Header orderCode = {order.orderCode} status = {order.status} />
             
             <div className = {styles.body}>
                 
-                <Dates dates = {order.dates} />
+                <Dates dates = {order.shippingInfo.dates} />
                 
                 <ShippingInfo shippingInfo = {order.shippingInfo} />
                 

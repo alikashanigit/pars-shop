@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Product from './Product';
 import Add from './review/add/Add';
-import ReviewsAdd from './review/all/add/Add';
+import ReviewsAdd from './review/all/addd/Add';
 import All from './review/all/All';
 
 

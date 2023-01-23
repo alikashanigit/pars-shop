@@ -22,7 +22,7 @@ import { shippingReducer } from './order/shipping/reducers';
 import { orderPayReducer } from './order/payment/reducers';
 import { userRegistrationPasswordResetReducer, userRegistrationPhoneNumberAddReducer, userRegistrationPhoneNumberVerifyReducer } from './user/registration/reducers';
 import { userAccountDeleteReducer, userAccountEmailEditReducer, userAccountEmailVerifyReducer, userAccountNameReducer, userAccountPasswordEditReducer, userAccountPasswordNewReducer, userAccountPasswordResetReducer, userDetailsReducer, userLastVisitedReducer, userLoginReducer, userShippingAddressReducer } from './user/account/reducers';
-import { userOrderActiveListReducer, userOrderCanceledListReducer, userOrderDeliveredListReducer, userOrderDetailsReducer, userOrderListReducer, userOrderReturnedListReducer } from './user/orders/reducers';
+import { userOrderActiveListReducer, userOrderCanceledListReducer, userOrderDeliveredListReducer, userOrderDetailsReducer, userOrderItemsSimilarListReducer, userOrderListReducer, userOrderReturnedListReducer } from './user/orders/reducers';
 import { userReviewsSubmitBenefitAddReducer, userReviewsSubmitBenefitRemoveAllReducer, userReviewsSubmitBenefitRemoveReducer, userReviewsSubmitCommentAddReducer, userReviewsSubmitCommentRemoveReducer, userReviewsSubmitDisadvantageAddReducer, userReviewsSubmitDisadvantageRemoveAllReducer, userReviewsSubmitDisadvantageRemoveReducer, userReviewsSubmitRatingReducer } from './user/reviews/submit/reducers';
 import { userBookmarkListReducer, userBookmarkRemoveAllReducer, userBookmarkRemoveReducer } from './user/bookmarks/reducers';
 
@@ -51,11 +51,14 @@ const reducer = combineReducers({
     userAccountPasswordReset: userAccountPasswordResetReducer,
     userAccountPasswordNew: userAccountPasswordNewReducer,
     userAccountDelete: userAccountDeleteReducer,
+    userOrderList: userOrderListReducer,
     userOrderActiveList: userOrderActiveListReducer,
     userOrderDeliveredList: userOrderDeliveredListReducer,
     userOrderCanceledList: userOrderCanceledListReducer,
     userOrderReturnedList: userOrderReturnedListReducer,
     userOrderDetails: userOrderDetailsReducer,
+    userOrderItemsSimilarList: userOrderItemsSimilarListReducer,
+    
     // User >> 'BOOKMARKS':
     userBookmarkList: userBookmarkListReducer,
     userBookmarkRemove: userBookmarkRemoveReducer,

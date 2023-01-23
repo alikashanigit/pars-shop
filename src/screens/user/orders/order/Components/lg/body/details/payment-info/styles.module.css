@@ -1,0 +1,10 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.title {
+    font-size: .88rem;
+    word-spacing: 1px;
+    color: #666;
+}

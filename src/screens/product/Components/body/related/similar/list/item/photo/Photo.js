@@ -8,7 +8,7 @@ const Photo = ({ item }) => {
         <Link className = {styles.photo} to = ''
         // to = {`product/${item._id}`}
         >
-            <img alt = {item.name} src = {item.cover} />
+            <img alt = {item.name} src = {item.photo} />
         </Link>
     );
 };

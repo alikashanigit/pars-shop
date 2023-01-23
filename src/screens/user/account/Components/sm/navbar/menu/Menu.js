@@ -2,21 +2,21 @@ import React from 'react'
 import styles from './styles.module.css'
 import Backdrop from '@mui/material/Backdrop';
 import Categories from './categories/Categories';
-import Header from './header/Header';
-import Featured from './featured/Featured';
-import Support from './support/Support';
 
 
 
 const Menu = ({ toggle, setToggle }) => {
     
     return (
-        <Backdrop id = {styles.backdrop} open = {toggle.menu}>
-            <div className = {styles.container}>
-                <Header setToggle = {setToggle} />
+        <Backdrop id = {styles.backdrop} open = {toggle.categories}>
+            <div className = {styles.hidden_back} onClick = {() => setToggle({ categories: false })} />
+            
+            <div className = {styles.container} >
+                
+                <span className={styles.sign}></span>
+
                 <Categories />
-                <Featured />
-                <Support />
+               
             </div>
         </Backdrop>
     )

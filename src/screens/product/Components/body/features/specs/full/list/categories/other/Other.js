@@ -3,10 +3,11 @@ import styles from './styles.module.css';
 import Item from '../item/Item';
 import { useSelector } from 'react-redux';
 import Classification from './classification/Classification';
+import { product } from '../../../../../../../../data';
 
 
 const Other = () => {
-    const { product: { specs } } = useSelector(state => state.productDetails);
+    // const { product: { specs } } = useSelector(state => state.productDetails);
 
     return (
         <div className = {styles.category}>
@@ -14,11 +15,11 @@ const Other = () => {
             <ul className = {styles.items}>
 
                 <Item title = 'سیستم‌عامل‌'>
-                    {/* <span className = {styles.value}>{specs.os}</span> */}
+                    {/* <span className = {styles.value}>{product.specs.os}</span> */}
                 </Item>
 
                 <Item title = 'کلاس‌بندی'>
-                    <Classification classification = {specs.classification && specs.classification} />
+                    <Classification classification = {product.specs.classification && product.specs.classification} />
                 </Item>
             
             </ul>

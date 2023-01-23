@@ -6,6 +6,8 @@ import { getUserDetails } from '../../../redux/user/account/actions';
 import Small from './Components/sm/Small';
 import Large from './Components/lg/Large';
 import { useNavigate } from 'react-router';
+import Navbar from './Components/sm/navbar/Navbar';
+import { getOrders } from '../../../redux/user/orders/actions';
 
 
 export const ToggleContext = createContext();
@@ -18,17 +20,26 @@ const Orders = () => {
         returned: false,
         canceled: false,
     });
+    const statusQuery = toggle.active
+        ? 'فعال'
+        : toggle.delivered
+        ? 'تحویل شده'
+        : toggle.canceled
+        ? 'لغو شده'
+        : toggle.returned
+        && 'مرجوع شده';
     const { userInfo } = useSelector(state => state.userLogin);
-    // const { success } = useSelector(state => state.userNameEdit);
     useEffect(() => {
         userInfo && userInfo.firstName 
             ? dispatch(getUserDetails())
             : navigate('/registration', { replace: true });
-    }, [userInfo]);
+        dispatch(getOrders(statusQuery))
+    }, [userInfo, toggle]);
     usePageTitle('سفارشات');
     return (
         <main className = {styles.main}>
         <ToggleContext.Provider value={{ toggle, setToggle }}>
+            {/* <Navbar /> */}
             <Small />
             <Large />
         </ToggleContext.Provider>

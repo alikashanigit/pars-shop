@@ -1,0 +1,44 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.menu li {
+    width: 100%;
+}
+
+.menu li > * {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+    padding: 13px 20px;
+    color: #444;
+    font-size: .92rem;
+    word-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+    padding: 13px 20px;
+    color: #444;
+    font-size: .92rem;
+    word-spacing: 1px;
+}
+.menu li > * > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .88rem;
+    word-spacing: 1px;
+}
+
+.menu li > div {
+    color: #777;
+}
+.menu li > div * {
+    font-size: .8rem;
+}

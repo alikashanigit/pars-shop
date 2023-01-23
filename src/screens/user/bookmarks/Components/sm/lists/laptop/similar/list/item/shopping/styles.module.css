@@ -1,0 +1,26 @@
+.shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.shopping .add_btn {
+    background-color: #3eb2ff;
+    color: #fff;
+    font-size: .75rem;
+    word-spacing: 1px;
+    border-radius: 12px;
+    flex-grow: 1;
+    padding: 2px 0;
+    max-width: 50px;
+    min-width: 50px;
+}
+.shopping > *:nth-child(2) {
+    display: flex;
+    gap: 3px;
+    color: #555;
+}
+.price > *:first-child {
+    font-size: .75rem;
+}

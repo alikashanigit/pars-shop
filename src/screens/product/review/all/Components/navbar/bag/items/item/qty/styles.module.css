@@ -1,0 +1,33 @@
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0;
+}
+.actions > div {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.btns {
+    display: flex;
+}
+.btns button {
+    flex-grow: 1;
+    padding: 5px 12px;
+    justify-content: center;
+    border-left: 1px solid rgba(238, 238, 238, 0.561);
+    color: #666;
+}
+.qty {
+    font-family: sfsemibold;
+    color: #444;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

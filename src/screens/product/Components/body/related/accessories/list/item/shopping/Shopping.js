@@ -3,10 +3,10 @@ import styles from './styles.module.css';
 import Price from './price/Price';
 import OldPrice from './price/OldPrice';
 import { useSelector } from 'react-redux';
-
+import { product } from '../../../../../../../data';
 
 const Shopping = () => {
-    const { product } = useSelector(state => state.productDetails);
+    // const { product } = useSelector(state => state.productDetails);
     return (
         <div className={styles.shopping}>
             <button className = {styles.add_btn}>

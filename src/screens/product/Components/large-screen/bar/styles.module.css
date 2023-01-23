@@ -32,12 +32,11 @@
         position: relative;
         z-index: 1;
         height: 100%;
-    }
-    
+    }   
     .product_info {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 15px;
         direction: ltr;
     }
     .photo {
@@ -58,16 +57,25 @@
     .shop_info button {
         background-color: #ff5555ee;
         color: #fff;
-        padding: 10px 20px;
+        padding: 8px 20px;
         border-radius: 15px;
         word-spacing: 1px;
+        font-size: .9rem;
     }
 }
-
-
 @media screen and (min-width: 1200px) {
     .header {
         padding: 0 10%;
     }
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: 0 10px; */
+}
+.menu button {
+    font-size: .86rem;
+}
+.menu a {}

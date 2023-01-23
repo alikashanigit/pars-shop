@@ -1,0 +1,29 @@
+.price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 1px;
+    
+}
+.value {
+    letter-spacing: 1px;
+    color: #333;
+    font-size: .75rem;
+}
+.unit {
+    font-size: .6rem;
+    color: #888;
+}
+.old_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.old_price .value {
+    letter-spacing: 2px;
+    color: #444;
+    text-decoration: line-through;
+    font-family: sflight;
+    font-size: .65rem;
+}

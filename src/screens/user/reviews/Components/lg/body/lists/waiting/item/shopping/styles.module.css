@@ -1,0 +1,23 @@
+.shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.shopping .add_btn {
+    background-color: #3eb2ff;
+    color: #fff;
+    font-size: .78rem;
+    word-spacing: 1px;
+    border-radius: 12px;
+    flex-grow: 1;
+    padding: 3px 0;
+    max-width: 60px;
+    min-width: 60px;
+}
+.shopping > *:nth-child(2) {
+    display: flex;
+    gap: 3px;
+    color: #555;
+}

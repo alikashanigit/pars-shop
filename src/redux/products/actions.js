@@ -9,6 +9,12 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
     try {
         dispatch({ type: 'PRODUCT_LIST_REQUEST' });
 
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+
         const strBrands = JSON.stringify(brands)
 
         const queriesUrl = `
@@ -16,10 +22,9 @@ export const getProductsList = (queryData, pageNumber = '') => async(dispatch) =
         &pageNumber=${pageNumber}
         &sort=${sort}
         &brands=${strBrands}
-
         `;
         
-        const { data } = await axios.get(queriesUrl);
+        const { data } = await axios.get(queriesUrl, config);
 
         dispatch({ 
             type: 'PRODUCT_LIST_SUCCESS',

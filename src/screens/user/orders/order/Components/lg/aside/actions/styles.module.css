@@ -1,0 +1,25 @@
+.actions { 
+    padding: 20px 10px;
+}
+.actions button {
+    font-size: .8rem;
+    word-spacing: 1px;
+    gap: 5px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+.logout_btn {
+    
+    padding: 0 15px;
+    color: #333;
+}
+.delete_btn {
+    
+    padding: 0 15px;
+    color: #ff5555;
+}
+

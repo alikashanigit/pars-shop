@@ -14,7 +14,7 @@ const Small = () => {
     return (
         <div className = {styles.container}>
             
-            <Navbar />
+            {/* <Navbar /> */}
             
             <div className={styles.body}>
                 

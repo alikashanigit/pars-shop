@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './styles.module.css';
+import { ToggleContext } from '../../Product';
 import Bookmark from './bookmark/Bookmark';
-import Compare from './compare/Compare';
 import Menu from './menu/Menu';
-import Shop from './shop/Shop';
 
 
 
 const Footer = () => {
+    const { toggle, setToggle } = useContext(ToggleContext);
     return (
         <footer className = {styles.footer}>
             
-            <Shop />
+            <div>
+                <button onClick = {() => setToggle({ ...toggle, shop: true })}>
+                    سفارش دهید
+                </button>
+            </div>
             
             <ul className = {styles.menu}>
     
                 <Bookmark />
-
 
                 <Menu />
     

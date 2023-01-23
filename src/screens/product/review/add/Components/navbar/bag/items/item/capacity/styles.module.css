@@ -1,0 +1,17 @@
+.capacity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.value {
+    letter-spacing: .5px;
+    font-family: sfregular;
+    color: #444;
+    font-size: 1.1rem;
+}
+.unit {
+    font-size: .65rem;
+    color: #666;
+    padding-top: 2px;
+    font-family: shabnamlight;
+}

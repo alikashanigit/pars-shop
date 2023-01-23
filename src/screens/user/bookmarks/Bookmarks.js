@@ -6,6 +6,8 @@ import { usePageTitle } from '../../../hooks/custom';
 import { getUserDetails } from '../../../redux/user/account/actions';
 import Small from './Components/sm/Small';
 import Large from './Components/lg/Large';
+import Navbar from './Components/sm/navbar/Navbar';
+import Shop from './Components/toggles/shop/Shop';
 
 
 export const ToggleContext = createContext();
@@ -13,7 +15,8 @@ const Bookmarks = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [toggle, setToggle] = useState({
-        laptop: true,
+        allCategories: true,
+        laptop: false,
         mobile: false,
         arcade: false,
         accessories: false,
@@ -33,8 +36,14 @@ const Bookmarks = () => {
     return (
         <main className = {styles.main}>
         <ToggleContext.Provider value={{ toggle, setToggle }}>
+            
+            <Navbar />
+
             <Small />
             <Large />
+
+            <Shop toggle={toggle} setToggle = {setToggle} /> 
+
         </ToggleContext.Provider>
         </main>
     );

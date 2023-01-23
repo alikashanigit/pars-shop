@@ -14,14 +14,14 @@ const List = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0288e0" class="bi bi-laptop" viewBox="0 0 16 16">
                 <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
                 </svg>
-                <Link to = "products/laptop/">
+                <Link to = "products/laptops?type=گیمینگ">
                     <span>گیمینگ</span>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                     </svg>
                 </Link>
-                <Link to = 'products/laptop'>
+                <Link to = 'products/laptops?type=programming'>
                     <span>برنامه‌نویسی</span>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                     width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -38,20 +38,6 @@ const List = () => {
                 <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
                 <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                 </svg>               
-                <Link to = "products/mobile/">
-                    <span>گیمینگ</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
-                <Link to = 'products/mobile'>
-                    <span>برنامه‌نویسی</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
             </Item>
             <Item
             title = 'تبلت‌ها'
@@ -61,20 +47,6 @@ const List = () => {
                 <path d="M1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm-1 8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8z"/>
                 <path d="M14 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
                 </svg>
-                <Link to = 'products/tablet/'>
-                    <span>گیمینگ</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
-                <Link to = 'products/tablet'>
-                    <span>برنامه‌نویسی</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
             </Item>
             <Item
             title = 'بازی'
@@ -94,20 +66,6 @@ const List = () => {
                 width="27" height="27" fill="#0288e0" class="bi bi-earbuds" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M6.825 4.138c.596 2.141-.36 3.593-2.389 4.117a4.432 4.432 0 0 1-2.018.054c-.048-.01.9 2.778 1.522 4.61l.41 1.205a.52.52 0 0 1-.346.659l-.593.19a.548.548 0 0 1-.69-.34L.184 6.99c-.696-2.137.662-4.309 2.564-4.8 2.029-.523 3.402 0 4.076 1.948zm-.868 2.221c.43-.112.561-.993.292-1.969-.269-.975-.836-1.675-1.266-1.563-.43.112-.561.994-.292 1.969.269.975.836 1.675 1.266 1.563zm3.218-2.221c-.596 2.141.36 3.593 2.389 4.117a4.434 4.434 0 0 0 2.018.054c.048-.01-.9 2.778-1.522 4.61l-.41 1.205a.52.52 0 0 0 .346.659l.593.19c.289.092.6-.06.69-.34l2.536-7.643c.696-2.137-.662-4.309-2.564-4.8-2.029-.523-3.402 0-4.076 1.948zm.868 2.221c-.43-.112-.561-.993-.292-1.969.269-.975.836-1.675 1.266-1.563.43.112.561.994.292 1.969-.269.975-.836 1.675-1.266 1.563z"/>
                 </svg>
-                <Link to = "accessories/gaming/">
-                    <span>گیمینگ</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
-                <Link to = 'accessories/programming'>
-                    <span>برنامه‌نویسی</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                </Link>
             </Item>
         </ul>      
     );

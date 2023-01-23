@@ -8,11 +8,12 @@ import CPUManufacturer from './cpu-manufacturer/CPUManufacturer';
 import GPUModel from './gpu-model/GPUModel';
 import GPUManufacturer from './gpu-manufacturer/GPUManufacturer';
 import Specs from './specs/Specs';
+import { product } from '../../../data';
 
 
 
 const Features = () => {    
-    const { product } = useSelector(state => state.productDetails);
+    // const { product } = useSelector(state => state.productDetails);
     return (
         <section className = {styles.features}>
             <CPUModel product = {product}/>

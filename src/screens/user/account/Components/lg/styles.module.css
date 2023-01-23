@@ -2,5 +2,46 @@
 
 
 @media screen and (min-width: 992px) {
-    .container { display: block; }
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        padding: 2px;
+        height: calc(100% - 40px);
+        position: relative;
+    }
+    .container > * {
+        background-color: #f6f6f6;
+        border-radius: 8px;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .container aside {
+        width: 320px;
+        position: sticky;
+        top: 0;
+        right: 0;
+        padding-right: calc(5% - 20px);
+    }
+    .body {
+       flex-grow: 1;
+       
+    }
+    .body > *:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 5%;
+    }
+    .body > *:last-child > * {
+        width: 45%;
+        box-shadow: 0 0 3px #ddd;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+    .body > *:last-child > * button {
+        height: 100%;
+        
+    }
+    
 }

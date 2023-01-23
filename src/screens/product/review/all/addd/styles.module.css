@@ -1,0 +1,40 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 180px;
+}
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 5%;
+    width: 100%;
+}
+.features > button {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 18px 25px;
+    background-color: #fefefe;
+    box-shadow: 0 0 2px #ddd;
+    justify-content: space-between;
+    font-size: .88rem;
+    word-spacing: 1px;
+}
+.features > button > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.slash {
+    color: #666;
+    padding: 0 4px;
+}
+
+@media screen and (min-width: 992px) {
+    .main > *:not(nav, footer) {
+        width: 80%;
+        margin: 20px auto;
+    }
+}

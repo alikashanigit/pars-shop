@@ -6,7 +6,6 @@ import List from './list/List';
 
 
 const Accessories = () => {    
-    const { product: { name } } = useSelector(state => state.productDetails);
     return (
         <section className = {styles.section}>
             <div className = {styles.header}>

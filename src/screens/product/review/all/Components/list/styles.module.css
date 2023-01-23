@@ -67,3 +67,8 @@
 .reactions > li a {
     color: #888;
 }
+@media screen and (min-width: 992px) {
+    .list {
+        padding: 20px 10%;
+    }
+}

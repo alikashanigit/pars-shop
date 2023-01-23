@@ -1,0 +1,60 @@
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background-color: #fff0;
+    border-bottom: 1px solid #fafafae0;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5%;
+    padding-left: calc(5% + 15px);
+}
+.header > * {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header > *:nth-child(2) { justify-content: center; }
+.header > *:nth-child(3) { 
+    justify-content: end; 
+    gap: 5px;
+}
+.header button {
+    font-size: .8rem;
+    word-spacing: 1px;
+    gap: 5px;
+    border-radius: 12px;
+    padding: 8px 15px;
+}
+.logout_btn {
+    background-color: #f4f4f4;
+    padding: 0 15px;
+    color: #333;
+}
+.delete_btn {
+    background-color: #f4f4f4;
+    padding: 0 15px;
+    color: #ff5555;
+}
+

@@ -1,0 +1,15 @@
+.section {
+    width: 100%;
+    padding: 50px 10px;
+    padding-top: 150px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+.header a {
+    font-size: .88rem;
+}

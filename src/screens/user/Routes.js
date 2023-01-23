@@ -15,10 +15,10 @@ const UserRoutes = () => {
             
             <Route path = '/account' element = {<Account />} />
             <Route path = '/account/profile' element = {<Profile />} />
-            <Route path = '/orders' element = {<Orders />} />
-            <Route path = '/orders/order/:id' element = {<Order />} />
-            <Route path = '/reviews' element = {<Reviews />} />
-            <Route path = '/bookmarks' element = {<Bookmarks />} />
+            <Route path = '/account/orders' element = {<Orders />} />
+            <Route path = '/account/orders/order/:id' element = {<Order />} />
+            <Route path = '/account/reviews' element = {<Reviews />} />
+            <Route path = '/account/bookmark-products' element = {<Bookmarks />} />
 
         </Routes>
     );

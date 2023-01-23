@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 
 
 const Similar = () => {    
-    const { product: { name } } = useSelector(state => state.productDetails);
     return (
         <section className = {styles.section}>
             <div className = {styles.header}>

@@ -1,0 +1,14 @@
+.price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.value {
+    letter-spacing: 1px;
+    font-family: sfregular;
+    color: #444;
+}
+.unit {
+    font-size: .7rem;
+    color: #666;
+}

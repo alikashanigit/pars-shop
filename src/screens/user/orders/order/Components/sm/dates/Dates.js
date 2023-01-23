@@ -3,8 +3,8 @@ import styles from './styles.module.css';
 
 
 const Dates = ({ dates }) => {
-    const splitYearFromDay = dates.ordered.day.split(' ', 4).pop()
-    const splitAllFromDay = dates.ordered.day.split(' ', 3)
+    const splitYearFromDay = dates.order.day.split(' ', 4).pop()
+    const splitAllFromDay = dates.order.day.split(' ', 3)
     console.log({
         splitYearFromDay,
         splitAllFromDay
@@ -19,7 +19,7 @@ const Dates = ({ dates }) => {
                         <span>{splitAllFromDay}</span>
                         <span>{splitYearFromDay}</span>
                     </div>
-                    <span>{dates.ordered.time}</span>
+                    <span>{dates.order.time}</span>
                 </div>
             </div>
             <div className={styles.container}>
@@ -27,8 +27,8 @@ const Dates = ({ dates }) => {
                 <>
                 <span className={styles.title}>تاریخ تحویل</span>
                 <div className={styles.value}>
-                    <span>{dates.ordered.day}</span>
-                    <span>{dates.ordered.time}</span>
+                    <span>{dates.order.day}</span>
+                    <span>{dates.order.time}</span>
                 </div>
                 </>
                 {/* } */}

@@ -1,0 +1,37 @@
+.shippingInfo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.shippingInfo > * {
+    flex-grow: 1;
+    width: 50%;
+}
+.title {
+    font-size: .88rem;
+    word-spacing: 1px;
+    color: #666;
+}
+.details {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.phone {
+    letter-spacing: 2px;
+}
+.state_city {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.zipCode {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.zipCode > *:last-child {
+    letter-spacing: 2px;
+}

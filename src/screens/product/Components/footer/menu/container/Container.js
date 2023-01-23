@@ -12,7 +12,10 @@ const Container = ({ open, setOpen, setToggle, }) => {
                     مشخصات
                 </button>
                 <button onClick = {() => setToggle({ allReviews: true })}>
-                    امتیاز و نظرات
+                    نظرات
+                </button>
+                <button onClick = {() => setToggle({ allReviews: true })}>
+                    ثبت امتیاز و نظر
                 </button>
             </div>
         </Backdrop>

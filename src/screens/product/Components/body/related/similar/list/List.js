@@ -20,7 +20,7 @@ const List = () => {
         // ....???
     })
     const dispatch = useDispatch();
-    const { loading, products } = useSelector(state => state.productList);
+    // const { loading, products } = useSelector(state => state.productList);
     useEffect(() => {
         dispatch(getProductsList(queryData));
     }, [queryData]);
@@ -32,7 +32,7 @@ const List = () => {
         pagination = {{ clickable: true }}
         modules = {[Pagination]}
         >
-            {products.map(item => (
+            {products?.map(item => (
             <SwiperSlide id = {styles.slide}>
                 <Item item = {item} />
             </SwiperSlide>

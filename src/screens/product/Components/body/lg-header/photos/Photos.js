@@ -5,12 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination }  from 'swiper';
 import "swiper/css";
 import "swiper/css/pagination";
+import { product } from '../../../../data';
 
 
 
 const Photos = () => {
     const [selectedColor, setSelectedColor] = useState(0);
-    const { product } = useSelector(state => state.productDetails);
+    // const { product } = useSelector(state => state.productDetails);
     let photos = [];
     const showSelectedPhotos = (i) => {
         photos = product.photos && product.photos[i].list;
